@@ -1,6 +1,5 @@
 #getting the requirements
 sudo apt install virtualenv
-sudo apt install virtualenv
 
 #creating a virtual environment
 virtualenv -p python3 env
@@ -8,7 +7,7 @@ virtualenv -p python3 env
 # entering into the virtual environment
 source env/bin/activate
 
-#all the dependencies will now be installed inside the virtual env
+#all the dependencies will now be installed inside the virtual environment env
 pip3 install flask flask-sqlalchemy
 
 #Let's create a simple hello world app in flask
@@ -57,8 +56,8 @@ index.html :
 {% endblock %}
 
 #It's like implementing an interface
-#blocks will be deddefined somewhere in other html files
-#content of which will be written in index.html
+#blocks will be defined somewhere in base html files
+#content of which will be written in html files extending base.html
 
 --------------------------------
  To link css from static
